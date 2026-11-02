@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | PhishGuard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ PhishGuard
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="scam-game.html">Scam Game</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Quiz Section -->
+    <section class="features">
+
+        <p class="small-title">
+            CYBER SAFETY QUIZ
+        </p>
+
+        <h1>🧠 Test Your Knowledge</h1>
+
+        <p class="section-text">
+            Answer the questions and check your cyber safety knowledge.
+        </p>
+
+
+        <!-- Quiz Card -->
+        <div class="card" id="quiz-card">
+
+            <h3 id="question-number">
+                Question 1
+            </h3>
+
+            <h2 id="question">
+                What should you do if you receive a suspicious link?
+            </h2>
+
+
+            <div class="hero-buttons">
+
+                <button class="btn primary"
+                    onclick="checkQuizAnswer(0)">
+                    Click it immediately
+                </button>
+
+                <button class="btn secondary"
+                    onclick="checkQuizAnswer(1)">
+                    Ignore and verify the message
+                </button>
+
+                <button class="btn secondary"
+                    onclick="checkQuizAnswer(2)">
+                    Share it with friends
+                </button>
+
+            </div>
+
+
+            <p id="quiz-result"></p>
+
+            <button
+                id="quiz-next"
+                class="btn primary"
+                onclick="nextQuizQuestion()"
+                style="display:none; margin-top:20px;">
+
+                Next Question →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🛡️ PhishGuard</h3>
+
+        <p>
+            Phishing, Scam & Fraud Detection Awareness Program
+        </p>
+
+        <p>
+            © 2026 PhishGuard
+        </p>
+
+    </footer>
+
+
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>

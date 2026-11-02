@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scam Detection Game | PhishGuard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ PhishGuard
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="scam-game.html">Scam Game</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Game -->
+    <section class="features">
+
+        <p class="small-title">
+            CYBER SAFETY GAME
+        </p>
+
+        <h1>🎮 Spot the Scam</h1>
+
+        <p class="section-text">
+            Read the message and decide whether it is Safe,
+            Suspicious or a Scam.
+        </p>
+
+
+        <!-- Score -->
+        <h2>
+            Score: <span id="score">0</span>
+        </h2>
+
+
+        <!-- Scenario -->
+        <div class="card" id="game-card">
+
+            <h3 id="question-number">
+                Scenario 1
+            </h3>
+
+            <p id="message">
+                Your account will be blocked today.
+                Click the link below immediately to verify
+                your account.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button class="btn primary"
+                    onclick="checkAnswer('safe')">
+                    🟢 Safe
+                </button>
+
+                <button class="btn secondary"
+                    onclick="checkAnswer('suspicious')">
+                    🟡 Suspicious
+                </button>
+
+                <button class="btn secondary"
+                    onclick="checkAnswer('scam')">
+                    🔴 Scam
+                </button>
+
+            </div>
+
+
+            <p id="result"></p>
+
+            <button
+                id="nextButton"
+                class="btn primary"
+                onclick="nextQuestion()"
+                style="display:none; margin-top:20px;">
+
+                Next Question →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🛡️ PhishGuard</h3>
+
+        <p>
+            Phishing, Scam & Fraud Detection Awareness Program
+        </p>
+
+        <p>
+            © 2026 PhishGuard
+        </p>
+
+    </footer>
+
+
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>

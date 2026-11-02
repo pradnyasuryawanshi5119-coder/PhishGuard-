@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey | PhishGuard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ PhishGuard
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+                <li><a href="scam-game.html">Scam Game</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Survey Header -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                COMMUNITY FEEDBACK
+            </p>
+
+            <h1>
+                📝 Scam Awareness <span>Survey</span>
+            </h1>
+
+            <p>
+                Share your experience and help us understand
+                online scam awareness in the community.
+            </p>
+
+        </div>
+
+        <div class="hero-icon">
+            📊
+        </div>
+
+    </section>
+
+
+    <!-- Survey Form -->
+    <section class="features">
+
+        <h2>Give Your Feedback</h2>
+
+        <p class="section-text">
+            Please select the option that best matches your opinion.
+        </p>
+
+
+        <div class="card">
+
+            <form id="surveyForm">
+
+
+                <!-- Question 1 -->
+                <div class="survey-question">
+
+                    <h3>
+                        1. How familiar are you with online scams?
+                    </h3>
+
+                    <label>
+                        <input type="radio"
+                               name="q1"
+                               value="Very Familiar"
+                               required>
+                        Very Familiar
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q1"
+                               value="Somewhat Familiar">
+                        Somewhat Familiar
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q1"
+                               value="Not Very Familiar">
+                        Not Very Familiar
+                    </label>
+
+                </div>
+
+
+                <!-- Question 2 -->
+                <div class="survey-question">
+
+                    <h3>
+                        2. Where do you usually receive suspicious messages?
+                    </h3>
+
+                    <label>
+                        <input type="radio"
+                               name="q2"
+                               value="SMS"
+                               required>
+                        SMS
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q2"
+                               value="WhatsApp">
+                        WhatsApp
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q2"
+                               value="Email">
+                        Email
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q2"
+                               value="Social Media">
+                        Social Media
+                    </label>
+
+                </div>
+
+
+                <!-- Question 3 -->
+                <div class="survey-question">
+
+                    <h3>
+                        3. What would you do after receiving a suspicious link?
+                    </h3>
+
+                    <label>
+                        <input type="radio"
+                               name="q3"
+                               value="Ignore it"
+                               required>
+                        Ignore it
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q3"
+                               value="Verify it">
+                        Verify it before opening
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q3"
+                               value="Click it">
+                        Click it immediately
+                    </label>
+
+                </div>
+
+
+                <!-- Question 4 -->
+                <div class="survey-question">
+
+                    <h3>
+                        4. How confident are you in identifying a scam?
+                    </h3>
+
+                    <label>
+                        <input type="radio"
+                               name="q4"
+                               value="Very Confident"
+                               required>
+                        Very Confident
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q4"
+                               value="Somewhat Confident">
+                        Somewhat Confident
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q4"
+                               value="Not Confident">
+                        Not Confident
+                    </label>
+
+                </div>
+
+
+                <!-- Question 5 -->
+                <div class="survey-question">
+
+                    <h3>
+                        5. What is the most important safety practice?
+                    </h3>
+
+                    <label>
+                        <input type="radio"
+                               name="q5"
+                               value="Never share OTP"
+                               required>
+                        Never share OTP/PIN
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q5"
+                               value="Click unknown links">
+                        Click unknown links
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q5"
+                               value="Share passwords">
+                        Share passwords
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary">
+
+                    Submit Survey →
+
+                </button>
+
+
+            </form>
+
+
+            <!-- Success Message -->
+            <div id="survey-result"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🛡️ PhishGuard</h3>
+
+        <p>
+            Phishing, Scam & Fraud Detection Awareness Program
+        </p>
+
+        <p>
+            © 2026 PhishGuard
+        </p>
+
+    </footer>
+
+
+    <script src="js/survey.js"></script>
+
+</body>
+
+</html>
